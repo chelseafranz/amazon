@@ -21,55 +21,105 @@
 
     <!-- Font we use for the default template-->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="">
 
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
 
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">learnAmazon</h3>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-left">
+                      <li><a href="index.php">Home</a></li>
+                      <li><a href="about.php">About</a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">
+                                Introduction
+                            </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">
+                                1. Getting Started
+                            </a></li>
+                            <li><a href="#">
+                                2. Setup
+                            </a></li>
+                            <li><a href="#">
+                                3. More Info
+                            </a></li>
+
+                          </ul>
+                        </li>
+                      <li><a href="contact.php">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <div class="container-fluid">
+
+      <div class="jumbotron headerMain">
+        <h1>Learn Amazon Redshift</h1>
+        <p class="lead">A simple guide for learning Amazon Redshift.
+        </p>
+
       </div>
 
-      <div class="jumbotron">
-        <h1>Congrats!</h1>
-        <p class="lead">You just scaffolded your app with the awesomely awesome Ariane Generator.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
+      <div class="row intro">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <h4 class="sectionTitle"><a href="">Introduction to Amazon Redshift</a></h4>
+          <p>
+              Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+            <a>Continue reading...</a>
+            <p class="hide showMore">
+                Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+            </p>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+          </p>
 
-          <h4><a href="http://libsass.org/">Sass</a></h4>
-          <p>Sass is a CSS pre-processor, which extends CSS with dynamic behavior such as variables, mixins, operations and functions. So powerfull.</p>
-          
+          <h4><a href="">Lesson One</a></h4>
+          <p>
+              Sass is a CSS pre-processor, which extends CSS with dynamic behavior such as variables, mixins, operations and functions. So powerfull.
+          </p>
 
-          
+         <h4><a href="">Lesson Two</a></h4>
+          <p>
+              Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
+          </p>
 
-          <h4><a href="http://getbootstrap.com/">Bootstrap</a></h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+          <h4><a href="">Lesson Three</a></h4>
+          <p>
+              Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.
+          </p>
 
-          <h4><a href="http://modernizr.com/">Modernizr</a></h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-          
         </div>
       </div>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Ariane team</p>
-      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <span class="pull-left">
+                        <a href="">Previous</a>
+                    </span>
+                    <span class="pull-right">
+                        <a href="">Next</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+      </footer>
     </div>
-    
+
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -77,41 +127,40 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/plugins.js -->
 
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    
+
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    
+
     <!-- endbuild -->
-    
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -120,5 +169,6 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+    -->
   </body>
 </html>

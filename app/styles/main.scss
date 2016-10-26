@@ -8,7 +8,45 @@
 
  //bower:scss
  @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
  //endbower
+
+
+$mainHeaderImg: 'http://lorempixel.com/400/200/abstract';
+@mixin mainText(){
+
+}
+
+@mixin headerImg($img){
+    background-image: url($img);
+}
+
+
+.headerMain{
+    //@include headerImg($mainHeaderImg);
+}
+.intro{
+    h4{
+        text-align: center;
+    }
+    p{
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
