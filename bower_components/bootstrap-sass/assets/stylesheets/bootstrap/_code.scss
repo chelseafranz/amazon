@@ -60,7 +60,31 @@ pre {
     background-color: transparent;
     border-radius: 0;
   }
+  .comment{
+      font-style: italic;
+      color: #999989;
+      padding:5px 0px;
+  }
+
 }
+pre code, pre .line-number {
+  float:left;
+  margin:0 1em 0 -1em;
+}
+
+pre .line-number span {
+  display:block;
+  padding:0 .5em 0 1em;
+  border-right:1px solid;
+  text-align:right;
+
+}
+
+pre .cl {
+  display:block;
+  clear:both;
+}
+
 
 // Enable scrollable blocks of code
 .pre-scrollable {
